@@ -10,5 +10,8 @@
     "https"
   ],
   "author": "Lionel Bergen",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sinon": "^9.2.2"
+  }
 }
