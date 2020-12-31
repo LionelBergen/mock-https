@@ -1,0 +1,14 @@
+{
+  "name": "mock-https",
+  "version": "1.0.0",
+  "description": "Simple library for mocking https calls inside of tests",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mock",
+    "https"
+  ],
+  "author": "Lionel Bergen",
+  "license": "ISC"
+}
