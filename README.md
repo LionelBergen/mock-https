@@ -3,9 +3,8 @@
 Simple library for mocking https calls inside of tests.  
 Works by using `sinon` to mock out `https` library.
 
-Usage/Example:
+Example test class utilizing mock-https
 --------------  
-<details><summary>Example test class utilizing mock-https:</summary>
 
 <p>
 
@@ -30,5 +29,3 @@ describe('description of test', () => {
 
 
 ```
-</p>
-</details>
