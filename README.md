@@ -3,6 +3,8 @@
 Simple library for mocking https calls inside of tests.  
 Works by using `sinon` to mock out `https` library.
 
+![https://www.npmjs.com/package/mock-https](https://nodei.co/npm/mock-https.png)
+
 Example test class utilizing mock-https
 --------------  
 

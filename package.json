@@ -17,10 +17,10 @@
   "author": "Lionel Bergen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LionelBergen/LeagueAPIWrapper/issues"
+    "url": "https://github.com/LionelBergen/mock-https/issues"
   },
   "dependencies": {
     "sinon": "^9.2.2"
   },
-  "homepage": "https://github.com/LionelBergen/LeagueAPIWrapper#readme"
+  "homepage": "https://github.com/LionelBergen/mock-https#readme"
 }
