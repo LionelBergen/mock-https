@@ -5,7 +5,8 @@ const assert = require('assert');
 const sandbox = sinon.createSandbox();
 
 /**
- * A class for mocking responses from https calls
+ * A class for mocking responses from https calls.
+ * Just an object that has an 'on' method
 */
 class FakeClientRequestObject {
   on(nameOfEvent) {
@@ -23,17 +24,6 @@ class FakeHttpResponse {
   }
 }
 
-// TODO: rename and doc
-class MockOptionsObject {
-  constructor(information) {
-    this.returnValue;
-  }
-  
-  andReturn(returnValue) {
-    this.returnValue = returnValue;
-  }
-}
-
 class MockHttps {
   get(expectedUrl, response) {
     sandbox.stub(https, 'get').callsFake(function(url, callbackFunction) {
@@ -47,8 +37,6 @@ class MockHttps {
       // We need to return an object that can have '.on(error ..)' invoked on
       return new FakeClientRequestObject();
     });
-    
-    return new MockOptionsObject();
   }
   
   reset() {
