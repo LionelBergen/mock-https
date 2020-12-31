@@ -1,7 +1,8 @@
 {
   "name": "mock-https",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple library for mocking https calls inside of tests",
+  "main": "MockHttps.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -9,9 +10,17 @@
     "mock",
     "https"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LionelBergen/mock-https.git"
+  },
   "author": "Lionel Bergen",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LionelBergen/LeagueAPIWrapper/issues"
+  },
   "dependencies": {
     "sinon": "^9.2.2"
-  }
+  },
+  "homepage": "https://github.com/LionelBergen/LeagueAPIWrapper#readme"
 }
