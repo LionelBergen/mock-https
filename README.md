@@ -23,11 +23,9 @@ afterEach(function() {
 describe('description of test', () => {
   it('should blah blah', async () => {
     mockhttps.get('https://www.url.com/something.json?limit=5', mockDataReturnedFromGet);
-    
+
     const result = await SomeClass.methodThatUsesHttps();  
 	assert.equal("", result);
   });
 });
-
-
 ```
