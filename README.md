@@ -25,7 +25,7 @@ describe('description of test', () => {
     mockhttps.get('https://www.url.com/something.json?limit=5', mockDataReturnedFromGet);
 
     const result = await SomeClass.methodThatUsesHttps();  
-	assert.equal("", result);
+    assert.equal("", result);
   });
 });
 ```
