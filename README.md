@@ -14,7 +14,7 @@ Example test class utilizing mock-https
 
 ```javascript
 const mockhttps = require('mock-https');
-let sampleUrlResponse = "...";
+let mockDataReturnedFromGet = "...";
 
 afterEach(function() {
   mockhttps.reset();
@@ -22,7 +22,7 @@ afterEach(function() {
 
 describe('description of test', () => {
   it('should blah blah', async () => {
-    mockhttps.get('https://www.url.com/something.json?limit=5', sampleUrlResponse);
+    mockhttps.get('https://www.url.com/something.json?limit=5', mockDataReturnedFromGet);
     
     const result = await SomeClass.methodThatUsesHttps();
 	assert.equal("", result);
