@@ -4,7 +4,9 @@
   "description": "Simple library for mocking https calls inside of tests",
   "main": "MockHttps.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint --ignore-path .gitignore .",
+    "lint_auto_fix": "eslint --fix --ignore-path .gitignore ."
   },
   "keywords": [
     "mock",
@@ -21,6 +23,10 @@
   },
   "dependencies": {
     "sinon": "^9.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-strongloop": "^2.1.0"
   },
   "homepage": "https://github.com/LionelBergen/mock-https#readme"
 }
