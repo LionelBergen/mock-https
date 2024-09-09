@@ -35,7 +35,7 @@ class MockHttps {
    * @param response Mock data we want the https.get call to generate
   */
   expectGet(expectedUrl, response) {
-    sandbox.stub(https, 'get').callsFake(function(url, callbackFunction) {
+    sandbox.stub(https, 'get').callsFake(function(url, options, callbackFunction) {
       assert.equal(expectedUrl, url, 'URL did not match expected. Expected: ' + expectedUrl + ' but was: ' + url);
 
       // invoke the response object given our fake data
